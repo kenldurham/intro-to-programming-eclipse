@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="stylesheet.css">
   <title>Kenneth Durham Entry into Tech</title>
   <h1><strong>Kenneth Durham Entry into Tech</strong></h1>
 </head> 
@@ -41,6 +42,26 @@
   <h2>Connect</h2>
   <table><footer> <a href="mailto:kenldurham@gmail.com">Email Me</a>  <a href= "https://github.com/kenldurham">Visit my github</a> <a href= "https://www.instagram.com/kenldurham">Visit my instagram</a></footer></table>
   </p>
+  <section>
+    <h2>Leave a Message</h2>
+    <form name="leave_message">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required="true">
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required="true">
+      <br />
+      <label for="message">Message</label>
+      <textarea name="message" id="message" required="true"></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  
+  <section  id="messages">
+    <h2>Messages</h2>
+    <ul></ul>
+   </section>
   <h2>Enjoying the Journey</h2>
   <iframe width="1080" height="720" src="https://www.youtube.com/embed/CYdPza_KY1w" title="YouTube video player"
     frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -49,3 +70,8 @@
 </body>
 
 </html>
+<style>
+  li>button {
+    margin-left: 10px;
+  }
+</style>
