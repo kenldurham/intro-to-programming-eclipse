@@ -1,10 +1,65 @@
+html{
+   font-size:18px 
+   
+}
+
 body {
+    
     margin: 0;
     padding: 0;
-    color: white;
-    background: linear-gradient(red, yellow);
+    color: black;
+    background: linear-gradient(white, blue);
     text-align: center;
     
-            
+    }
+    .spacing{
+        margin: 10;
+        padding: 20;
+
+    }
+.font{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
 }
-    
+
+.font-2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.5rem;
+
+}
+.font-3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3.5rem;
+  
+}
+a:link {
+    color: darkblue;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgba(248, 10, 10, 0.952);
+  }
+  a:hover {
+    background-color: rgb(55, 0, 255);
+  }
+  a:focus{
+    color:white;
+    background-color:red;
+  }
+  .bgcolor {
+   background-color:rgb(171, 161, 255);
+   border-block-style: groove;
+    writing-mode: horizontal-tb;
+    direction: unset;
+}
+  @media only screen and (max-width:370px) {
+    html{
+        font-size: 5px;
+
+    }
+    body{
+        background: limegreen;
+
+    }
+  }

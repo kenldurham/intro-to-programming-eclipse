@@ -2,19 +2,21 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="stylesheet.css">
   <title>Kenneth Durham Entry into Tech</title>
-  <h1><strong>Kenneth Durham Entry into Tech</strong></h1>
+  <h1 class="font"><strong>Kenneth Durham Entry into Tech</strong></h1>
   <link rel="stylesheet" href="../css/stylesheet.css">
 </head> 
-<body>
+<body class="body-color">
+  <main>
+  <header>
   <ul>
-    <li><a href="#about-me">About Me</a></li>
-    <li><a href="#education">My education</a></li>
-    <li><a href="#companies">Places I've worked</a></li>
+    <li class="font-2"><a href="#about-me">About Me</a></li>
+    <li class="font-2"><a href="#education">My education</a></li>
+    <li class="font-2"><a href="#companies">Places I've worked</a></li>
 </ul>
+  </header>
   <section id="about-me">
-  <h1>About Me</h1>
+  <h1 class="font-3">About Me</h1>
   <article>
     <p>
       My name is <em>Kenneth Durham</em>. I am currently a student of Code the Dream,<br>
@@ -43,36 +45,32 @@
   <h2>Connect</h2>
   <table><footer> <a href="mailto:kenldurham@gmail.com">Email Me</a>  <a href= "https://github.com/kenldurham">Visit my github</a> <a href= "https://www.instagram.com/kenldurham">Visit my instagram</a></footer></table>
   </p>
-  <section>
-    <h2>Leave a Message</h2>
+  <section class="spacing">
+    <h2 class="font-3" >Leave a Message</h2>
     <form name="leave_message">
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" required="true">
+      <input type="text" name="name" id="name" class= "bgcolor" required="true">
       <br />
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" required="true">
+      <input type="email" name="email" id="email" class= "bgcolor" required="true">
       <br />
       <label for="message">Message</label>
-      <textarea name="message" id="message" required="true"></textarea>
+      <textarea name="message" id="message" class= "bgcolor" required="true"></textarea>
       <br />
       <button type="submit">Submit</button>
     </form>
   </section>
   
-  <section  id="messages">
-    <h2>Messages</h2>
+  <section  class="spacing" id="messages" >
+    <h2 class="font-3">Messages</h2>
     <ul></ul>
    </section>
   <h2>Enjoying the Journey</h2>
-  <iframe width="1080" height="720" src="https://www.youtube.com/embed/CYdPza_KY1w" title="YouTube video player"
-    frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
- <script src= "js/index.js"></script>
+    <iframe id="our-video" width="720" height="480" src="https://www.youtube.com/embed/CYdPza_KY1w" title="YouTube video player"
+      frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <script src= "js/index.js"></script>
+  </main>
 </body>
 
 </html>
-<style>
-  li>button {
-    margin-left: 10px;
-  }
-</style>
