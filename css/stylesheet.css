@@ -1,16 +1,21 @@
+*{
+  box-sizing: border-box;
+  font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+}
 html{
-   font-size:18px 
+  font-size:1.25em 
    
 }
 
 body {
-    
     margin: 0;
     padding: 0;
     color: black;
-    background: linear-gradient(white, blue);
     text-align: center;
+    cursor: pointer;
     
+    background-image: url("../instructions/media/BGV.mp4");
+     
     }
     .spacing{
         margin: 10;
@@ -19,18 +24,48 @@ body {
     }
 .font{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.5rem;
+    font-size: 3.5rem;
+    position:relative;
+}
+.custom-box {
+  
+  width: auto;
+  height:auto;
+  
+  padding: 10px 10px 10px 10px;
+  
+ 
+  border-top : 30px solid rgb(0, 10, 156);
+  border-bottom :30px solid rgb(0, 8, 122);
+  border-left :30px solid rgb(0, 16, 233);
+  border-right:30px solid rgb(0, 15, 224);
+  margin: 20px;
+
+
+  overflow-y: scroll;
+  
+
 }
 
 .font-2{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 2.5rem;
-
+    font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    width: auto;
+    height:auto;
+    padding: 20px 20px 20px 20px;
+    
+   
+    border-top : 30px solid rgb(0, 10, 156);
+    border-bottom :30px solid rgb(0, 8, 122);
+    border-left :30px solid rgb(0, 16, 233);
+    border-right:30px solid rgb(0, 15, 224);
+    margin: 20px;
+    border-radius: 25px;
 }
 .font-3{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 3.5rem;
-  
+    font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    text-align: center;
 }
 a:link {
     color: darkblue;
@@ -53,13 +88,74 @@ a:link {
     writing-mode: horizontal-tb;
     direction: unset;
 }
-  @media only screen and (max-width:370px) {
+  @media only screen and (max-width:500px) {
     html{
-        font-size: 5px;
+        font-size: .5rem;
 
     }
     body{
-        background: limegreen;
+        background: rgb(55, 0, 117);
 
     }
+  }
+  #big{
+    font-size:large 20px;
+
+  }
+
+  ul li {
+    display:inline-block;
+    width: 30%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 25px;
+  }
+  #animated{
+    
+    width: 0px;
+    height: 100px;
+    background: rgb(137, 119, 241);
+    transition: width .1s;
+    transition-timing-function: linear;
+    margin:auto;
+    border-radius: 25px;
+    
+  }
+  #animated:hover {
+    width: 400px;
+  }
+  #header_box{
+    margin-top: 0px;
+    width: auto;
+    height:auto;
+    background-color: cornflowerblue;
+    padding: 10px 10px 10px 10px;
+    border-top : 10px solid rgb(0, 10, 156);
+    border-bottom :10px solid rgb(0, 8, 122);
+    border-left :30px solid rgb(0, 16, 233);
+    border-right:30px solid rgb(0, 15, 224);
+    border-radius: 25px;
+  }
+  .art_font{
+    font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+
+  }
+
+  .container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgb(158, 158, 255);
+    border-radius: 5px;
+    margin: 45px auto;
+    box-shadow: 0 10.5px 0 0 rgba(0,0,0,0.1);
+  }
+  .item {
+    color: #fff;
+    padding: 15px;
+    margin: 5px;	
+    background: rgb(87, 87, 250);
+    border-radius: 30px;
   }
