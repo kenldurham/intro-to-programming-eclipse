@@ -9,6 +9,20 @@ for (const key in education) {
   edu.innerText = `${education[key]}`;
   eduSection.appendChild(edu);
 }
+const companies = [
+  'Motivate LLC', 
+  'TW Services', 
+  'California Freight', 
+  'Nitelife ENT'
+];
+const experience = document.getElementById('companies');
+const expList = experience.querySelector('ul');
+for(let i = 0; i < companies.length;i++){
+  const exp = document.createElement('li');
+  exp.innerText = `${companies[i]}`;
+  experience.appendChild(exp);
+  console.log(companies[i])
+}
 console.log(eduSection);
 const today = new Date();
 console.log(today);
