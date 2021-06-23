@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+  color: white;
 }
 html{
   font-size:1.25em 
@@ -15,7 +16,9 @@ body {
     cursor: pointer;
     
     background-image: url("../instructions/media/BGV.mp4");
-     
+    position: static;
+    min-width: 100%; 
+    min-height: 100%;
     }
     .spacing{
         margin: 10;
