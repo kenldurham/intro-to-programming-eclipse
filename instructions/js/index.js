@@ -61,9 +61,23 @@ messageForm.addEventListener("submit", (e) => {
     const entry = e.target.parentNode;
     entry.remove();
   });
-  removeButton.style.backgroundColor = "red"
+  
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
 
   messageForm.reset();
+});
+
+const iframe = document.querySelector('#our-video');
+console.log(iframe);
+window.addEventListener('resize', event => {
+    const newWidth = window.innerWidth;
+    const newHeight = window.innerHeight;
+    if(newWidth < 400) {
+        iframe.width = newWidth;
+        iframe.height = newHeight;
+    } else {
+        iframe.width = newWidth/2;
+        iframe.height = newHeight/2;
+    }
 });
