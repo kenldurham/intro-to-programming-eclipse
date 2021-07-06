@@ -1,21 +1,22 @@
 *{
   box-sizing: border-box;
   font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+  
 }
 html{
   font-size:1.25em 
-   
 }
 
 body {
     margin: 0;
     padding: 0;
-    color: black;
+    color: rgb(255, 140, 46);
     text-align: center;
     cursor: pointer;
+    object-fit: fill;
+    min-height: 100vh;
+    background: url("../instructions/media/bg.jpeg");
     
-    background-image: url("../instructions/media/BGV.mp4");
-     
     }
     .spacing{
         margin: 10;
@@ -35,16 +36,13 @@ body {
   padding: 10px 10px 10px 10px;
   
  
-  border-top : 30px solid rgb(0, 10, 156);
-  border-bottom :30px solid rgb(0, 8, 122);
-  border-left :30px solid rgb(0, 16, 233);
-  border-right:30px solid rgb(0, 15, 224);
+  border-top : 30px solid rgb(51, 51, 51);
+  border-bottom :30px solid rgb(73, 73, 73);
+  border-left :30px solid rgb(173, 173, 173);
+  border-right:30px solid rgb(161, 161, 161);
+  border-radius: 25px;
   margin: 20px;
-
-
   overflow-y: scroll;
-  
-
 }
 
 .font-2{
@@ -53,12 +51,10 @@ body {
     width: auto;
     height:auto;
     padding: 20px 20px 20px 20px;
-    
-   
-    border-top : 30px solid rgb(0, 10, 156);
-    border-bottom :30px solid rgb(0, 8, 122);
-    border-left :30px solid rgb(0, 16, 233);
-    border-right:30px solid rgb(0, 15, 224);
+    border-top : 30px solid rgb(36, 36, 36);
+    border-bottom :30px solid rgb(48, 48, 48);
+    border-left :30px solid rgb(122, 122, 122);
+    border-right:30px solid rgb(184, 184, 184);
     margin: 20px;
     border-radius: 25px;
 }
@@ -68,25 +64,27 @@ body {
     text-align: center;
 }
 a:link {
-    color: darkblue;
+    color: rgba(238, 95, 0, 0.952);
     text-decoration: none;
   }
   
   a:visited {
-    color: rgba(248, 10, 10, 0.952);
+    color: rgba(252, 92, 0, 0.952);
   }
   a:hover {
-    background-color: rgb(55, 0, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
   }
   a:focus{
-    color:white;
-    background-color:red;
+    color:rgb(117, 117, 117);
+    background-color:rgb(255, 255, 255);
   }
   .bgcolor {
-   background-color:rgb(171, 161, 255);
+   background-color:rgb(235, 133, 0);
    border-block-style: groove;
     writing-mode: horizontal-tb;
     direction: unset;
+    border-radius: 25px;
 }
   @media only screen and (max-width:500px) {
     html{
@@ -112,28 +110,29 @@ a:link {
   }
   #animated{
     
-    width: 0px;
-    height: 100px;
-    background: rgb(137, 119, 241);
-    transition: width .1s;
+    width: 10em;
+    height: 3em;
+    display: grid;
+    justify-content: space;
+    transition: width .2s;
     transition-timing-function: linear;
     margin:auto;
-    border-radius: 25px;
+    border-radius: 30px;
     
   }
   #animated:hover {
-    width: 400px;
+    width: 250px;
   }
   #header_box{
     margin-top: 0px;
     width: auto;
     height:auto;
-    background-color: cornflowerblue;
+   
     padding: 10px 10px 10px 10px;
-    border-top : 10px solid rgb(0, 10, 156);
-    border-bottom :10px solid rgb(0, 8, 122);
-    border-left :30px solid rgb(0, 16, 233);
-    border-right:30px solid rgb(0, 15, 224);
+    border-top : 10px solid rgb(65, 65, 65);
+    border-bottom :10px solid rgb(70, 70, 70);
+    border-left :30px solid rgb(158, 158, 158);
+    border-right:30px solid rgb(94, 94, 94);
     border-radius: 25px;
   }
   .art_font{
@@ -143,19 +142,18 @@ a:link {
   }
 
   .container {
-    display:flex;
+    display:grid;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content:space;
     padding: 10px;
-    background: rgb(158, 158, 255);
-    border-radius: 5px;
-    margin: 45px auto;
-    box-shadow: 0 10.5px 0 0 rgba(0,0,0,0.1);
-  }
-  .item {
-    color: #fff;
-    padding: 15px;
-    margin: 5px;	
-    background: rgb(87, 87, 250);
+    border:black;
     border-radius: 30px;
+    margin: 45px auto;
+    box-shadow: 0 10.5px 0 0 rgba(44, 44, 44, 0.1);
   }
+  .button-color {
+    background: rgb(255, 109, 12);
+    border-radius: 10px;
+    color:black;
+  };
+ 
