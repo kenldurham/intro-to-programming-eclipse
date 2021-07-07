@@ -1,7 +1,12 @@
 *{
   box-sizing: border-box;
   font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+
+  color:white;
+  
+=======
   color:rgb(255, 202, 88)
+
 }
 html{
   font-size:1.25em 
@@ -29,17 +34,23 @@ body {
     position:relative;
 }
 .custom-box {
-  
   width: auto;
   height:auto;
   
   padding: 10px 10px 10px 10px;
   
  
+
+  border-top : 30px solid rgb(48, 48, 48);
+  border-bottom :30px solid rgb(54, 54, 54);
+  border-left :30px solid rgb(145, 145, 145);
+  border-right:30px solid rgb(187, 187, 187);
+
   border-top : 30px solid rgb(46, 46, 46);
   border-bottom :30px solid rgb(31, 31, 31);
   border-left :30px solid rgb(158, 158, 158);
   border-right:30px solid rgb(78, 78, 78);
+
   margin: 20px;
 
 
@@ -84,7 +95,7 @@ a:link {
     background-color:red;
   }
   .bgcolor {
-   background-color:rgb(171, 161, 255);
+   background-color:rgb(145, 145, 145);
    border-block-style: groove;
     writing-mode: horizontal-tb;
     direction: unset;
@@ -113,9 +124,9 @@ a:link {
   }
   #animated{
     
-    width: 0px;
+    width: 200px;
     height: 100px;
-    background: rgb(137, 119, 241);
+    background: rgb(23, 3, 136);
     transition: width .1s;
     transition-timing-function: linear;
     margin:auto;
@@ -129,7 +140,6 @@ a:link {
     margin-top: 0px;
     width: auto;
     height:auto;
-    background-color: cornflowerblue;
     padding: 10px 10px 10px 10px;
     border-top : 10px solid rgb(0, 10, 156);
     border-bottom :10px solid rgb(0, 8, 122);
@@ -144,11 +154,10 @@ a:link {
   }
 
   .container {
-    display:flex;
+    display:grid;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
-    background: rgb(158, 158, 255);
     border-radius: 5px;
     margin: 45px auto;
     box-shadow: 0 10.5px 0 0 rgba(0,0,0,0.1);
@@ -157,6 +166,6 @@ a:link {
     color: #fff;
     padding: 15px;
     margin: 5px;	
-    background: rgb(87, 87, 250);
+    background: rgb(134, 134, 134);
     border-radius: 30px;
   }
