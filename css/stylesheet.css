@@ -36,10 +36,10 @@ body {
   padding: 10px 10px 10px 10px;
   
  
-  border-top : 30px solid rgb(0, 10, 156);
-  border-bottom :30px solid rgb(0, 8, 122);
-  border-left :30px solid rgb(0, 16, 233);
-  border-right:30px solid rgb(0, 15, 224);
+  border-top : 30px solid rgb(46, 46, 46);
+  border-bottom :30px solid rgb(31, 31, 31);
+  border-left :30px solid rgb(158, 158, 158);
+  border-right:30px solid rgb(78, 78, 78);
   margin: 20px;
 
 
