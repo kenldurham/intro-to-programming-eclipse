@@ -1,8 +1,12 @@
 *{
   box-sizing: border-box;
   font-family:fantasy, 'Arial Narrow Bold', sans-serif;
+
   color:white;
   
+=======
+  color:rgb(255, 202, 88)
+
 }
 html{
   font-size:1.25em 
@@ -36,10 +40,17 @@ body {
   padding: 10px 10px 10px 10px;
   
  
+
   border-top : 30px solid rgb(48, 48, 48);
   border-bottom :30px solid rgb(54, 54, 54);
   border-left :30px solid rgb(145, 145, 145);
   border-right:30px solid rgb(187, 187, 187);
+
+  border-top : 30px solid rgb(46, 46, 46);
+  border-bottom :30px solid rgb(31, 31, 31);
+  border-left :30px solid rgb(158, 158, 158);
+  border-right:30px solid rgb(78, 78, 78);
+
   margin: 20px;
 
 
@@ -95,7 +106,7 @@ a:link {
 
     }
     body{
-        background: rgb(55, 0, 117);
+        background: rgb(80, 80, 80);
 
     }
   }
