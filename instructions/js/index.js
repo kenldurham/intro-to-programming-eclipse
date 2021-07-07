@@ -95,3 +95,22 @@ window.addEventListener('resize', event => {
         iframe.height = newHeight/2;
     }
 });
+
+let githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/kenldurham/repos");
+githubRequest.send();
+githubRequest.addEventListener("load" , function (event){
+  let repositories = JSON.parse(githubRequest.response);
+  console.log(repositories);
+  let projectSection = document.getElementById("projects");
+  let projectList = projectSection.querySelector('ul');
+  for(let i = 0; i < repositories.length ; i++){
+    let project = document.createElement("li");
+   project.innerText = repositories[i].name;
+   projectList.appendChild(project); 
+  };
+});
+
+
+
+  
