@@ -96,21 +96,25 @@ window.addEventListener('resize', event => {
     }
 });
 
-let githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/kenldurham/repos");
-githubRequest.send();
-githubRequest.addEventListener("load" , function (event){
-  let repositories = JSON.parse(githubRequest.response);
-  console.log(repositories);
+//let githubRequest = new XMLHttpRequest();
+//githubRequest.open("GET", "https://api.github.com/users/kenldurham/repos");
+//githubRequest.send();
+function handleRepoData(repositories){
+ // let repositories = JSON.parse(githubRequest.response);
+  //console.log(repositories);
   let projectSection = document.getElementById("projects");
   let projectList = projectSection.querySelector('ul');
   for(let i = 0; i < repositories.length ; i++){
     let project = document.createElement("li");
+
    project.innerText = repositories[i].name;
    projectList.appendChild(project); 
   };
-});
-
-
+};
+fetch("https://api.github.com/users/kenldurham/repos").then(res =>{
+  return res.json()
+}).then(repositories =>{
+handleRepoData(repositories)
+})
 
   
