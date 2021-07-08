@@ -115,6 +115,6 @@ fetch("https://api.github.com/users/kenldurham/repos").then(res =>{
   return res.json()
 }).then(repositories =>{
 handleRepoData(repositories)
-})
+});
 
   

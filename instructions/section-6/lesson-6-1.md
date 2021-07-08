@@ -80,7 +80,7 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ ] Using "DOM Selection", select the #projects section by `id` and store it in a variable named `projectSection`
 - [ ] Using "DOM Selection", query the `projectSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `projectList`
 - [ ] Create a `for` loop to iterate over your `repositories` Array, starting at index 0
-- [ ] Inside the loop, create a new list item (`li`) element and store it in a variable named `project`git 
+- [ ] Inside the loop, create a new list item (`li`) element and store it in a variable named `project`git git stat
   - hint: `createElement` method
 - [ ] On the next line, set the inner text of your `project` variable to the current Array element's `name` property
   - hint: access the Array element using bracket notation
