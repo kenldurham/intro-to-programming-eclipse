@@ -37,15 +37,15 @@ body {
   
  
 
-  border-top : 30px solid rgb(48, 48, 48);
-  border-bottom :30px solid rgb(54, 54, 54);
-  border-left :30px solid rgb(145, 145, 145);
-  border-right:30px solid rgb(187, 187, 187);
+  border-top : 15px solid rgb(48, 48, 48);
+  border-bottom :15px solid rgb(54, 54, 54);
+  border-left :15px solid rgb(145, 145, 145);
+  border-right:15px solid rgb(187, 187, 187);
 
-  border-top : 30px solid rgb(46, 46, 46);
-  border-bottom :30px solid rgb(31, 31, 31);
-  border-left :30px solid rgb(158, 158, 158);
-  border-right:30px solid rgb(78, 78, 78);
+  border-top : 15px solid rgb(46, 46, 46);
+  border-bottom :15px solid rgb(31, 31, 31);
+  border-left :15px solid rgb(158, 158, 158);
+  border-right:15px solid rgb(78, 78, 78);
 
   margin: 20px;
 
