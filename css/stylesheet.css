@@ -15,10 +15,8 @@ body {
     color: black;
     text-align: center;
     cursor: pointer;
-    
-    background-image: url("../instructions/media/bgi.jpg");
-     
-    }
+    background-image: url("../media/bgi.jpg");
+  }
     .spacing{
         margin: 10;
         padding: 20;
@@ -32,16 +30,11 @@ body {
 .custom-box {
   width: auto;
   height:auto;
-  
   padding: 10px 10px 10px 10px;
-  
- 
-
   border-top : 15px solid rgb(48, 48, 48);
   border-bottom :15px solid rgb(54, 54, 54);
   border-left :15px solid rgb(145, 145, 145);
   border-right:15px solid rgb(187, 187, 187);
-
   border-top : 15px solid rgb(46, 46, 46);
   border-bottom :15px solid rgb(31, 31, 31);
   border-left :15px solid rgb(158, 158, 158);
@@ -76,7 +69,7 @@ body {
     text-align: center;
 }
 a:link {
-    color: rgb(70, 255, 224);
+    color: rgb(255, 230, 0);
     text-decoration: none;
   }
   
@@ -91,46 +84,28 @@ a:link {
     background-color:red;
   }
   .bgcolor {
-   background-color:rgb(145, 145, 145);
-   border-block-style: groove;
+   background-color:rgb(31, 31, 31);
+   
     writing-mode: horizontal-tb;
     direction: unset;
+    border-radius: 5px;
 }
   @media only screen and (max-width:500px) {
     html{
         font-size: .5rem;
 
     }
-    body{
-        background: rgb(80, 80, 80);
-
-    }
+    
   }
   #big{
     font-size:large 20px;
-
   }
-
   ul li {
     display:inline-block;
     width: 30%;
     padding: 10px 0;
     text-align: center;
     border-radius: 25px;
-  }
-  #animated{
-    
-    width: 200px;
-    height: 100px;
-    background: rgb(23, 3, 136);
-    transition: width .1s;
-    transition-timing-function: linear;
-    margin:auto;
-    border-radius: 25px;
-    
-  }
-  #animated:hover {
-    width: 400px;
   }
   #header_box{
     margin-top: 0px;
@@ -146,7 +121,6 @@ a:link {
   .art_font{
     font-family:fantasy, 'Arial Narrow Bold', sans-serif;
     font-size: 1rem;
-
   }
 
   .container {
@@ -156,15 +130,8 @@ a:link {
     padding: 10px;
     border-radius: 5px;
     margin: 45px auto;
-    box-shadow: 0 10.5px 0 0 rgba(0,0,0,0.1);
   }
-  .item {
-    color: #fff;
-    padding: 15px;
-    margin: 5px;	
-    background: rgb(134, 134, 134);
-    border-radius: 30px;
-  }
+
 
   body{
     display:grid;
@@ -177,7 +144,7 @@ a:link {
   }
   
   .container{
-    width: 1000px;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -205,7 +172,7 @@ a:link {
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
-    border-radius: 30px;
+    border-radius: 50px;
   }
   
   .container .card:hover .face.face1{
@@ -213,12 +180,12 @@ a:link {
     box-shadow:
       inset 0 0 60px whitesmoke,
       inset 20px 0 80px rgb(252, 143, 2),
-      inset -20px 0 80px rgb(255, 123, 0),
+      inset -20px 0 80px rgb(255, 60, 0),
       inset 20px 0 300px rgb(255, 0, 0),
-      inset -20px 0 300px rgb(255, 255, 255),
+      inset -20px 0 300px rgb(255, 160, 160),
       0 0 50px #fff,
-      -10px 0 80px rgb(255, 189, 67),
-      10px 0 80px rgb(255, 238, 0);
+      -10px 0 80px rgb(255, 67, 67),
+      10px 0 80px rgb(255, 0, 0);
      
   }
   
@@ -256,7 +223,7 @@ a:link {
   
   .container .card .face.face2{
      position: relative;
-     background: rgb(255, 150, 64);
+     background: rgb(255, 104, 17);
      display: flex;
      align-items: center;
      justify-content: center;
@@ -264,7 +231,7 @@ a:link {
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(255, 0, 0, 0.8);
     transform: translateY(-100px);
-    border-radius: 30px;
+    border-radius: 50px;
   }
   
   .container .card:hover .face.face2{
@@ -282,12 +249,14 @@ a:link {
   
   .container .card .face.face2 .content a{
     text-decoration:none;
+    background-color:#800000;
     color: black;
     box-sizing: border-box;
-    outline : 1px solid #333;
+    border-radius: 50px;
     padding: 10px;
     margin: 15px 0 0;
     display: grid;
+    border-radius: 50px;
   }
   
   .container .card .face.face2 .content a:hover{

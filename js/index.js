@@ -106,15 +106,19 @@ function handleRepoData(repositories){
   let projectList = projectSection.querySelector('ul');
   for(let i = 0; i < repositories.length ; i++){
     let project = document.createElement("li");
-
-   project.innerText = repositories[i].name;
-   projectList.appendChild(project); 
+    console.log(repositories[i].html_url)
+    let aTag = document.createElement("a")
+  aTag.href = repositories[i].html_url;
+   aTag.innerText = repositories[i].name;
+   projectList.appendChild(project);
+   project.appendChild(aTag); 
   };
 };
 fetch("https://api.github.com/users/kenldurham/repos").then(res =>{
   return res.json()
 }).then(repositories =>{
 handleRepoData(repositories)
+console.log(repositories);
 });
 
   
