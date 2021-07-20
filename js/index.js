@@ -1,6 +1,6 @@
 const education = {
   CodeTenderlion: "CodeRamp and CodeRamp++",
-  CodetheDream: "RedEclipse",
+  CodetheDream: "Code the Dream Red Eclipse cohort",
 };
 const eduSection = document.getElementById("education");
 const eduList = eduSection.querySelector("ul");
@@ -120,5 +120,3 @@ fetch("https://api.github.com/users/kenldurham/repos").then(res =>{
 handleRepoData(repositories)
 console.log(repositories);
 });
-
-  

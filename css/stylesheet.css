@@ -2,7 +2,7 @@
   box-sizing: border-box;
   font-family:fantasy, 'Arial Narrow Bold', sans-serif;
 
-  color:white;
+  
   
 
   color:rgb(255, 202, 88)
@@ -39,13 +39,8 @@ body {
   border-bottom :15px solid rgb(31, 31, 31);
   border-left :15px solid rgb(158, 158, 158);
   border-right:15px solid rgb(78, 78, 78);
-
   margin: 20px;
-
-
   overflow-y: scroll;
-  
-
 }
 
 .font-2{
@@ -116,6 +111,7 @@ a:link {
     border-bottom :10px solid rgb(54, 54, 54);
     border-left :30px solid rgb(128, 128, 128);
     border-right:30px solid rgb(172, 172, 172);
+    background-image: url("../media/bgi.jpg");
     border-radius: 25px;
   }
   .art_font{
@@ -178,12 +174,12 @@ a:link {
   .container .card:hover .face.face1{
     transform: translateY(0);
     box-shadow:
-      inset 0 0 60px whitesmoke,
-      inset 20px 0 80px rgb(252, 143, 2),
+      inset 0 0 60px rgb(124, 0, 0),
+      inset 20px 0 80px rgb(255, 94, 0),
       inset -20px 0 80px rgb(255, 60, 0),
       inset 20px 0 300px rgb(255, 0, 0),
       inset -20px 0 300px rgb(255, 160, 160),
-      0 0 50px #fff,
+      0 0 50px rgb(255, 255, 255),
       -10px 0 80px rgb(255, 67, 67),
       10px 0 80px rgb(255, 0, 0);
      
@@ -191,19 +187,19 @@ a:link {
   
   
   .container .card .face.face1 .content{
-    opacity: .2;
+    opacity: .8;
     transition:  0.5s;
     text-align: center;
     
   }
   
   .container .card:hover .face.face1 .content{
-    opacity: 100;
-   
+    opacity: 0;
+
   }
   
   .container .card .face.face1 .content i{
-    font-size: 3em;
+    
     color: rgb(0, 0, 0);
     display: inline-block;
      
@@ -213,8 +209,6 @@ a:link {
     font-size: 1em;
     color: rgb(255, 255, 255);
     text-align: center;
-    
-  
   }
   
   .container .card .face.face1 .content a{
@@ -223,7 +217,7 @@ a:link {
   
   .container .card .face.face2{
      position: relative;
-     background: rgb(255, 104, 17);
+     background: rgb(255, 144, 80);
      display: flex;
      align-items: center;
      justify-content: center;
@@ -232,12 +226,20 @@ a:link {
     box-shadow: 0 20px 50px rgba(255, 0, 0, 0.8);
     transform: translateY(-100px);
     border-radius: 50px;
+    box-shadow:
+      inset 0 0 60px rgb(0, 0, 0),
+      inset 20px 0 80px rgb(252, 143, 2),
+      inset -20px 0 80px rgb(255, 60, 0),
+      inset 20px 0 300px rgb(255, 0, 0),
+      inset -20px 0 300px rgb(255, 160, 160),
+      0 0 50px rgb(255, 0, 0),
+      -10px 0 80px rgb(255, 67, 67),
+      10px 0 80px rgb(255, 0, 0);
+    
   }
   
   .container .card:hover .face.face2{
       transform: translateY(0);
-  
-  
   }
   
   .container .card .face.face2 .content p, a{
@@ -250,7 +252,7 @@ a:link {
   .container .card .face.face2 .content a{
     text-decoration:none;
     background-color:#800000;
-    color: black;
+    color: rgb(255, 255, 255);
     box-sizing: border-box;
     border-radius: 50px;
     padding: 10px;
@@ -261,6 +263,6 @@ a:link {
   
   .container .card .face.face2 .content a:hover{
     color: whitesmoke; 
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.5);
   }
   
