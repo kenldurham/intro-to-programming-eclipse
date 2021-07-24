@@ -71,6 +71,7 @@ messageForm.addEventListener("submit", (e) => {
   const removeButton = document.createElement("button");
   removeButton.innerText ="remove"
   removeButton.type = "button";
+  removeButton.className ="bgcolor";
   removeButton.addEventListener("click", (e) => {
     const entry = e.target.parentNode;
     entry.remove();
@@ -78,7 +79,6 @@ messageForm.addEventListener("submit", (e) => {
   
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
-
   messageForm.reset();
 });
 
